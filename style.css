@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #3e3737;
+    animation: fadeInUp 0.3s ease-out;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: background 0.5s ease
+   
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity :0;
+        transform : translateY(30px);
+    } 
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+
+
+#eidImg {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+.MsgContainer { 
+     display: none ;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 16px;
+     border-radius: 15px;
+     background-color: rgba(89, 75, 51, 0.8);
+     opacity: 65%;
+     animation: fadeInUp 0.3s ease-out;
+     max-width: 90%;
+}
+
+ h1 {
+    font-size: 40px;
+    font-family:cursive, monospace, sans-serif;
+    color: #b09b76;
+    letter-spacing: 3px;
+    border-radius: 4px;
+    animation: shake 5s infinite;
+    font-weight: 500;
+    padding: 16px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+
+p {
+    font-size: 23px;
+    font-family:cursive, monospace, sans-serif;
+    padding-bottom: 110px;;
+    letter-spacing: 3px;
+    text-transform: lowercase;
+}
+
+button { 
+    padding: 30px 50px;
+    margin: 0 auto;
+    background-color: #73615c;
+    color: rgb(221, 210, 210);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: #5e4d48;
+    cursor: pointer;
+    border: 1px solid none;
+    animation: pulse 1s pulse;
+    transform: scale(1.05);
+    
+}
+
+button:active {
+    margin: 30px;
+    background-color: #4f3e38;
+    opacity: 0.1;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% {transform: scale(1); }
+}
+
+@media (min-width: 900px) {
+   body {
+    padding: 100px;
+   }
+    }
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #eidImg {
+        width: 450px;
+        border-radius: 10px;
+        
+    }
+
+@media (max-width: 900px) {
+    #eidImg  {
+        width: 350px;
+        height: auto;
+        
+    }
+    h1 {
+        font-size: 28px;
+    }
+
+    .MsgContainer {
+        padding: 28px;
+        width: 90%;
+    }
+  
+}
